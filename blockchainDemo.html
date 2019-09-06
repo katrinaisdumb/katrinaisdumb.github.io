@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Block Chain Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/styleBlockchain.css">
+    <script type="text/javascript" src="js/blockchainDemo.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<nav id="navbar"> 
+    <div class = "container"> 
+        <ul>
+            <li> <a href="index.html">Home </a></li>
+            <li> <a href="#anchor2">About </a></li>
+            <li> <a href="#anchor3">Projects </a></li>
+            <li> <a href="#anchor4">Contact </a></li>
+            <li> <a href="blockchainDemo.html">Block Chain</a></li>
+        </ul>
+    </div>
+</nav>
+        
+<div class = "container" >
+    <section>
+        <h1 class="mainTitle">Block Chains</h1>
+        <p style="text-indent:none;">
+        Block Chains are a new, flashy way to store data. This technology was initially invented for bitcoin transactions, 
+        however it is useful in many other areas. It allows you to store blocks of related data (bitcoin transactions, private profile data, etc.) 
+        in a unique way
+        </p>
+        <h1 class="secondaryTitle">Distributed</h1>
+        <p> 
+        Block chain is unique in that it is distributed. You can essentially understand this definition as "it can exist as something that 
+        is present on everyone's devices." There is no one specific server/computer that serves as a higher authority. This is convenient because to most extend, 
+        transactions on block chain are publically recorded. Rather than purchasing a big flashy super computer to do the heavy lifting, like many banks and government 
+        departments do, transactions can be verified with anyone's computer.
+        </p>
+        <p>
+        This means that your computer can potentially work to verify a transaction made by someone else around the world. Typically, for this work, or "mining", that your 
+        computer does, you will be rewarded with cryptocurrency. 
+        This is part of the reason why graphics cards became so expensive when cryptocurrency was becoming very popular. People would use graphics cards to allow their computer
+        to do mining around the clock, and could essentially make money with only having to invest in graphics cards. 
+        </p>
+        <h1 class="secondaryTitle">Secure</h1>
+        <p> 
+        Because of the fancy structure and math behind the way blockchains work they are very secure. Obviously with things like monetary transactions, some people might be interested
+        in altering these digital records and making some money - especially if the system is not regulated by a single central entity. Through linking each block (transaction) through 
+        a hash function, it is very very difficult to tamper these records. If they are tampered with, due to their structure, it is also very easy to isolate the exact piece of data where 
+        any tampering may have occured. 
+        </p>
+        <h1 class="secondaryTitle">Hash Functions</h1>
+        <p>
+        The most important concept behind how these blocks works is through hash functions. This is a mathimatical way of mapping data. If you know what a surjective, or onto function is: This is what hash functions are. 
+        It allows you to have <label style="color:midnightblue">f(x)=y</label>, so you can find any <label style="color:firebrick">y</label> value given <label style="color:seagreen">x</label>, however if I gave you a <label style="color:firebrick">y</label> value, you would not be able to find <label style="color:seagreen">x</label> that produced it.
+        </p>
+        <p> 
+        Here are some example hash functions f(x)->y: 
+        </p>
+        <div class="hashExample">
+            <div class="gridItem">
+                    Remainder Function: f(x)=x%z
+                    <div> 
+                        <input class="slider" type="range" id="modulusSlider" min="1" max="100" value="25" oninput="updateZ()">
+                    </div> 
+
+                    <div class="functionBox">
+                        <div class="functionItem">
+
+                                <label style="color:seagreen">x</label> % <span id="zBox">25</span> 
+                                <div> 
+                                    <input type="text" placeholder="Numbers Only" id="modulusInput"class="xInput" oninput="modulusHash()">
+                                </div>
+                        </div>
+
+                        <div class="functionItem">
+                                <i class="functionArrow"></i>
+                        </div>
+                       
+                        <div class="functionItem">
+                                <label style="color:firebrick">y</label>
+                                <div class="textBox" id="modulusOutput"> 
+                                </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="gridItem">
+                    adsfsafdsa
+            </div>
+            <div class="gridItem">
+                    adsfsafdsa
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
