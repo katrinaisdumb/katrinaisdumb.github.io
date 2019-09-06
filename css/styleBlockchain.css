@@ -1,0 +1,266 @@
+
+
+body
+{
+	background-image:url(../images/betterBackground1.jpeg);
+	 /* background-size:     cover; */                     /* This and the next line are added code to make the image not repeat */
+    /*background-repeat:   no-repeat;*/
+    background-size: auto;
+	/*background-color: black;*/ /*I want this to be a cool image*/ 
+	color: #555;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16;
+	line-height: 1.6em;
+	margin: 0;
+}
+
+#rightPic
+{
+	float: right;
+	padding-top: none;
+}
+
+.container
+{
+	width:80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.container h2
+{
+	float: left;
+}
+
+.container section{
+    background-color: whitesmoke; 
+}
+
+.container section h1{
+    text-align:center;color: mediumpurple;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+}
+
+.mainTitle{
+    font-size: 5vw; 
+}
+
+.secondaryTitle{
+    font-size:3vw;
+    padding-top: 20px; 
+    padding-bottom:0px; 
+}
+
+.container section p{
+    text-indent: none; 
+    font-size: 1.8vw; 
+    line-height: 2.1vw; 
+    padding-left: 3vw; 
+    padding-right: 3vw; 
+}
+
+.hashExample{
+    display:grid; 
+    margin: 2vw; 
+    grid-template-columns: auto; 
+    grid-template-rows: auto; 
+    grid-row-gap: 2vw; 
+}
+
+.gridItem{
+	padding:1.5vw; 
+	font-size: 1.9vw; 
+	border-style:solid; 
+	border-color: mediumpurple; 
+	border-width:3px; 
+	border-radius: 10px; 
+}
+
+.functionBox{
+	margin-top: 2vw; 
+	display:grid;
+	grid-template-columns: auto auto auto; 
+}
+
+.functionItem{
+	font-size:3vw; 
+	line-height: 3vw; 
+	text-align:center; 
+}
+
+.functionArrow{
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+.xInput{
+	font-size: 1.8vw;
+	margin-top: 1vw; 
+	border-style: solid; 
+	border-width: 2px; 
+	border-color: seagreen; 
+	/* adding:20px; */ 
+	height: 10vw; 
+	width: 17vw; 
+}
+
+.textBox{
+	margin-top: 1vw; 
+	border-style: solid; 
+	border-width: 2px; 
+	border-color: firebrick; 
+	/*padding: 20px; */ 
+	font-size: 1.8vw; 
+	height: 10vw; 
+	width: 17vw; 
+
+}
+
+.slider {
+	margin-top: 1vw; 
+	-webkit-appearance: none;
+	width: 100%;
+	height: 25px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+  }
+  
+  .slider:hover {
+	opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	background: mediumpurple;
+	cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: #4CAF50;
+	cursor: pointer;
+  }
+
+#mainHeader
+{
+	background-color: coral;
+	color: white;
+}
+
+#icons ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+#icons li
+{
+	display:inline; 
+	padding-right: 13%;
+}
+
+#icons a
+{
+	text-decoration: none;
+	font-size: 18px;
+	padding-right 15px;
+}
+
+#navbar
+{
+	background-color: mediumpurple;
+	color: white;
+}
+
+#navbar ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+#navbar li
+{
+	display: inline; /*this is cool it displays the list items on the same line*/
+
+}
+
+#navbar a
+{
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 15px; /*this will separate them when the list items are displayed net to eachother so that they are not so close together PRO COMMMENT */ 
+}
+
+/*#showcase
+{
+	background-image:url(../images/showcase.jpeg);
+	background-position: center right;
+	min-height: 300px; /* we use min-height rather than "height" because we want the text and image to grow in height as the width of the page decreases 
+	margin-bottom: 30px; /*everything under the showcase will be pushed down 30px */ /*
+}
+
+#showcase h1
+{
+	color: #fff;
+	font-size: 50px;
+	line-height: 1.6em;
+	padding-top: 30px;
+}*/
+
+#main
+{
+
+	padding: 0 2%;
+	background-color: #f4f4f4;
+	float: left;
+	width: 70%;
+
+
+	/*padding: 0 30px; */
+	/*box-sizing: border-box;*/
+
+}
+
+#sidebar
+{
+	float: right;
+	width: 30%;
+	background: #333;
+	color: white;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#mainFooter 
+{
+	background: mediumpurple;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	/*margin-top: 40px;*/
+}
+
+/*anything in here must be under 600 px*/ 
+
+@media(max-width: 600px) 
+{
+	#main
+	{
+		width: 100%; /* makes it so that shit goes on top of eachother if the width is super restricted */ 
+		float: none; 
+	}
+}
+

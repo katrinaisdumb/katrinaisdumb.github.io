@@ -1,0 +1,145 @@
+
+
+body
+{
+	background-image:url(../images/betterBackground1.jpeg);
+	 /* background-size:     cover; */                     /* This and the next line are added code to make the image not repeat */
+    /*background-repeat:   no-repeat;*/
+    background-size: auto;
+	/*background-color: black;*/ /*I want this to be a cool image*/ 
+	color: #555;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16;
+	line-height: 1.6em;
+	margin: 0;
+}
+
+#rightPic
+{
+	float: right;
+	padding-top: none;
+}
+
+.container
+{
+	width:80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.container h2
+{
+	float: left;
+}
+
+#mainHeader
+{
+	background-color: coral;
+	color: white;
+}
+
+#icons ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+#icons li
+{
+	display:inline; 
+	padding-right: 13%;
+}
+
+#icons a
+{
+	text-decoration: none;
+	font-size: 18px
+	padding-right 15px;
+}
+
+#navbar
+{
+	background-color: mediumpurple;
+	color: white;
+}
+
+#navbar ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+#navbar li
+{
+	display: inline; /*this is cool it displays the list items on the same line*/
+
+}
+
+#navbar a
+{
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 15px; /*this will separate them when the list items are displayed net to eachother so that they are not so close together PRO COMMMENT */ 
+}
+
+/*#showcase
+{
+	background-image:url(../images/showcase.jpeg);
+	background-position: center right;
+	min-height: 300px; /* we use min-height rather than "height" because we want the text and image to grow in height as the width of the page decreases 
+	margin-bottom: 30px; /*everything under the showcase will be pushed down 30px */ /*
+}
+
+#showcase h1
+{
+	color: #fff;
+	font-size: 50px;
+	line-height: 1.6em;
+	padding-top: 30px;
+}*/
+
+#main
+{
+
+	padding: 0 2%;
+	background-color: #f4f4f4;
+	float: left;
+	width: 70%;
+
+
+	/*padding: 0 30px; */
+	/*box-sizing: border-box;*/
+
+}
+
+#sidebar
+{
+	float: right;
+	width: 30%;
+	background: #333;
+	color: white;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#mainFooter 
+{
+	background: mediumpurple;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	/*margin-top: 40px;*/
+}
+
+/*anything in here must be under 600 px*/ 
+
+@media(max-width: 600px) 
+{
+	#main
+	{
+		width: 100%; /* makes it so that shit goes on top of eachother if the width is super restricted */ 
+		float: none; 
+	}
+}
+
