@@ -3,8 +3,9 @@
 <head>
 	<title>Feekes Coding</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body onload="myFunction()">
 
 <!--	<header id="mainHeader"> 
 		<div class = "container">
@@ -25,78 +26,40 @@
 		</div>
 	</nav>
 
-	
 
-	<div class = "container" > <a name = "anchor2">
-	<section id="main">
-		<h1>About <img id = "rightPic" src= "mugshot.jpeg" width = "96" height = "128"/></h1>
-			<!--<img id = "rightPic" src= "mugshot.jpeg" width = "96" height = "128"/>-->
-		<p> 	My name is Ian Feekes, I am a third year computer science student at University of California Santa Cruz. I love to program and to learn new things, and I always find it exciting to explore new coding languages and techniques. I originally learned Java in high scool, and in college I branched out to working on projects in C and C++ in both a linux-based environment, and using Xcode. 
-		</p>
-		<p> 	Outside of school I spend a lot of time coding as part of personal projects, both out of interest and to sharpen my skills for practical use. I was introduced to javascript for web applications as may be seen in this website. I am very interested in gaming, and as a result spend a lot of time learning C++ and Unreal Engine 4 conventions for projects that I am currently developing. 
-		</p>
-		<p> 	As part of my effort to perfect my skills as well as possible, I have worked on several online courses, including codecademy tutorials that I have posted below in the website. They have proven especially useful in learning both web development skills and tricks for manipulating files in a command-line environment. 
-		</p>
-	</section>
-</a>
+	<div class="box">
+	  <div class="cat" id="cat">
+		<div class="cat__body"></div>
+		<div class="cat__body"></div>
+		<div class="cat__tail"></div>
+		<div class="cat__head"></div>
+	  </div>
+	  <img id="myImg" src="images/kat1.jpg" style="display:none;max-width:100%;max-height:320px;">
+	</div>
 
-	<!--<aside id = "sidebar">
-		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis </p>
-	</aside>-->
+	<script>
+		var myVar;
 
-	<section id="main"> <a name = "anchor3">
-		<h1>Projects</h1>
-		<div class = "projects" >
-			<ul>
-				<li> Unreal Engine 4</li>
-				<p>
-					EX
-					One of my biggest interests is in game design. I love developing video games, and ever since I took some introductory classes in University, I started dissecting games and taking apart their mechanics whenever I got the chance. I downloaded the widely popular Unreal Engine 4 game development software and began writing code for my own projects in C++. </p>
-				<p>I am currently working on creating my own resource-based game called "Feywild," inspired from the likes of Settlers of Catan that has mechanics like strategic placement of cities near resource centers and the production of armies to blockade your opponent's resources. I combine this with polishing the graphics to create aesthetic, randomly-generated wilderness tiles containing seeds for different terrains (which yield various resources) intended to make gameplay competitive, exciting and attractive. </p>
-				<p>An idea I am working towards with this project is using AI opponents that are challenging to defeat - without making the game inherently unfair - to produce more of a pleasure of overcoming challenge for the player. I want to implement this in a unique way so that the CNN does not play predictably as is seen in so many games. To make the bots smart I intend on creating a "neural network" learning system to give the outcome of intelligent, challenging gameplay that constatly engages the players and evolves with their skill levels. 
-				<!--<li> App stuff </li>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p> -->
-				<li> Codefights </li>
-				<p>I came across codefights for competitive coding tournaments and challenges. I quicky found that it has many algorithms to exercise that force good coding practice and understanding of every aspect of coding - from bitwise to hashing -  in order to be able to efficiently tackle the problems presented. I fell in love with the satisfaction of being able to puzzle out solutions to complex problems. Linked <a href="https://github.com/ianfeekes/codefights" target = "_blank">here</a> is my github repository containing the introductory algorithms (mostly done in java) and <a href = "https://github.com/ianfeekes/codefights-core" target = "_blank"> here</a> is the github repository containing the core (done in a mixture of java and c) algorithms. Under profiles and links you can find a link to my actual codefights account. I am currently working through learning the python section of codefights in order to get substantial experience with scripting language, and will soon set up a github repository for my code in python. </p>
-				<li>C </li>
-				<p> Through my coding in C++, I found that any practice I had in its parent's language helped me tremendously with progress in my Unreal Engine 4 projects. I decided to sharpen my foundations as strongly as possible by independantly redoing all of my previous programming assignments and labs from University of California Santa Cruz purely in C rather than the Java that they had previously focused on. These following links go to my github repositories for all programming in UCSC, from <a href = "https://github.com/ianfeekes/CMPS11" target = "_blank"> intermediate algorithms</a> to <a href = "https://github.com/ianfeekes/CMPS12B-" target = "_blank">data structures </a> to <a href = "https://github.com/ianfeekes/CMPS101" target = "_blank"> abstract data types</a>.
-				</p>
-			</ul>
-		</div>
-	</a>
-		</section>
+		function myFunction() {
+		myVar = setTimeout(showPage, 3000);
+		}
 
-		<section id="main" >
-			<a name = "anchor4">
-		<h1>Contact</h1>
-		<p> Any inquiries can be sent to ianfeekes@gmail.com or to my linkedin page below. I look forward to hearing from you! 
-		</p>
-	</section>
+		function showPage() {
+		document.getElementById("cat").style.display = "none";
+		document.getElementById("myImg").style.display = "block";
+		}
+	</script>
 
-	<section id="main">
-		<h1>Profiles/Links</h1>
-		<nav id="icons">
-
-			<ul>
-				<li> <a href="https://www.linkedin.com/in/ianfeekes/" target = "_blank"><img src="linked.jpeg" width="64" height="64"/> </a></li>
-				<li> <a href="https://github.com/ianfeekes" target = "_blank"><img src="githubLogo.jpeg" width="64" height="64"/></a></li>
-				<li> <a href="https://www.codecademy.com/ianfeekes" target = "_blank"por><img src="codecademy.jpeg" width="64" height="64"/> </a></li>
-				<li> <a href="https://codefights.com/profile/ianfeekes" target = "_blank"><img src="codefightslogo.jpeg" width="64" height="64"/> </a></li>
-				<li> <a href="https://portfolium.com/IanFeekes" target = "_blank"><img src="portfolium.jpeg" width="64" height="64"/> </a></li>
-			</ul>
-
-	</nav>
-</a>
-	</section>
-
-
+	<div class = "container" > 
+		<a name = "anchor2">
+			<section id="main">
+				<h1 class="mainheader">Who is Dumb</h1>
+				<div class="text">
+						There is one whomst've is known as Katrina. Her aliases include "Spreadsheets," "Turbokat," and "The Crumbler." This site is to give an understanding to the general populus about her ways, so that she may have a chance of coexisting with humanity. 					
+				</div>
+				
+			</section>
+		</a>
 	</div>
 
 	<footer id="mainFooter">
