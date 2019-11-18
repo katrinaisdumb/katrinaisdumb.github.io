@@ -2,7 +2,6 @@
 
 body
 {
-	background-image:url(../images/betterBackground1.jpeg);
 	 /* background-size:     cover; */                     /* This and the next line are added code to make the image not repeat */
     /*background-repeat:   no-repeat;*/
     background-size: auto;
